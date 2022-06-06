@@ -8,7 +8,7 @@ export class CatsGetService implements GetAllCatsUseCase {
     @Inject('CatsRepository') private readonly catsRepository: CatsRepository,
   ) {}
 
-  public getAllCats() {
-    return this.catsRepository.getAllCats();
+  public async getAllCats() {
+    return await this.catsRepository.getAllCats();
   }
 }

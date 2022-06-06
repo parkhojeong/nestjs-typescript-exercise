@@ -1,5 +1,5 @@
 import { Cat } from '../../../domain/cat';
 
 export interface GetAllCatsUseCase {
-  getAllCats: () => Cat[];
+  getAllCats: () => Promise<Cat[]>;
 }
